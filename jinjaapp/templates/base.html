@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block  title %}Online Class{% endblock %}</title>
+</head>
+<body>
+<header>
+    <h1>{% block header %}Welcome to Emobilis Online class{% endblock %}</h1>
+<nav>
+    <ul>
+        <li><a href="{% url 'home_page' %}">home</a></li>
+        <li><a href="{% url 'about_page' %}">about</a></li>
+        <li><a href="{% url 'contact_page' %}">contactus</a></li>
+        <li><a href="{% url 'gallery_page' %}">gallery</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+    {% block content  %}Content{% endblock %}
+</main>
+
+<footer>
+    <p>@copy 2024 Online Class</p>
+</footer>
+</body>
+</html>
